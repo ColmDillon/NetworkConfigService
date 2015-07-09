@@ -2,9 +2,9 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 
-	<persistence-unit name="TrackBackup">
+	<persistence-unit name="netconfig">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<jta-data-source>java:jboss/datasources/mysql2</jta-data-source>
+		<jta-data-source>java:jboss/datasources/network_configuration_service</jta-data-source>
 		<properties>
 			<property name="hibernate.hdm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="false" />
