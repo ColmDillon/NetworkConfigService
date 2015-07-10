@@ -47,4 +47,17 @@ public class CellServiceEJB implements CellServiceLocal {
 
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.networkConfigService.serviceLocal.CellServiceLocal#createCell(java
+	 * .lang.Integer, java.lang.String, java.lang.Integer)
+	 */
+	@Override
+	public void createCell(Integer cell_id, String cell_name, Integer cell_range) {
+		dao.createCell(cell_id, cell_name, cell_range);
+
+	}
+
 }

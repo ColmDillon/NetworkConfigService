@@ -97,4 +97,17 @@ public class CellDAOImpl implements CellDAO {
 
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.networkConfigService.dao.CellDAO#createCell(java.lang.Integer,
+	 * java.lang.String, java.lang.Integer)
+	 */
+	@Override
+	public void createCell(Integer cell_id, String cell_name, Integer cell_range) {
+
+		Cell cell = new Cell(cell_id, cell_name, cell_range);
+
+	}
+
 }

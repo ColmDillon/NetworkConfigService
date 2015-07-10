@@ -22,4 +22,6 @@ public interface CellDAO {
 	void deleteCell(Integer cell_id);
 
 	void editCell(Integer cell_id, String cell_name, Integer cell_range);
+
+	void createCell(Integer cell_id, String cell_name, Integer cell_range);
 }

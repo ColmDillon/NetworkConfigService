@@ -15,4 +15,6 @@ public interface CellServiceLocal {
 	public void deleteCell(Integer cell_id);
 
 	public void editCell(Integer cell_id, String cell_name, Integer cell_range);
+
+	public void createCell(Integer cell_id, String cell_name, Integer cell_range);
 }
