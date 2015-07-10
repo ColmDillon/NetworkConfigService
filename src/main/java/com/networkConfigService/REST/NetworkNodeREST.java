@@ -31,7 +31,7 @@ public class NetworkNodeREST {
 		return nnl.getNetworkNode(nodeId);
 	}
 
-	
+	//comment
 	@GET
 	@Path("/getAllNodes")
 	@Produces(MediaType.APPLICATION_JSON)
