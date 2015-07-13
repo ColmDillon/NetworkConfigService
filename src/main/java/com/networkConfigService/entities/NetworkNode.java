@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Transient;
 
 @SuppressWarnings("serial")
 @Entity(name="network_node")
@@ -20,6 +21,9 @@ public class NetworkNode implements Serializable{
 	private Integer nodeId;
 	
 	@Column
+	private String name;
+	
+	@Column
 	private String location;
 	
 	@Column
@@ -28,7 +32,7 @@ public class NetworkNode implements Serializable{
 	@Column
 	private Double longtitude;
 	
-	
+	@Transient
 	private List<Cell> nodeCells = new ArrayList<Cell>();
 	
 	
