@@ -62,10 +62,11 @@ public class NetworkNodeREST {
 	@POST
 	@Path("/addNode")
 	public void addNetworkNode(@QueryParam("nodeId") Integer nodeId,
-			@QueryParam("location") String	location,
+			@QueryParam("nodeName") String	nodeName,
+			@QueryParam("nodeLocation") String	location,
 			@QueryParam("latitude") Double latitude,
 			@QueryParam("longtitude") Double longtitude) {
-			nnl.addNetworkNode(nodeId, location, latitude, longtitude);
+			nnl.addNetworkNode(nodeId, nodeName, location, latitude, longtitude);
 		
 	}
 

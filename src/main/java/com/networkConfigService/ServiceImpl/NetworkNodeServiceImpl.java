@@ -44,10 +44,10 @@ public class NetworkNodeServiceImpl implements NetworkNodeLocal{
 	}
 
 	@Override
-	public void addNetworkNode(Integer nodeId, String location,
+	public void addNetworkNode(Integer nodeId, String nodeName, String location,
 			Double latitude, Double longtitude) {
 		
-		nnd.addNetworkNode(nodeId, location, latitude, longtitude);
+		nnd.addNetworkNode(nodeId, nodeName, location, latitude, longtitude);
 		
 	}
 

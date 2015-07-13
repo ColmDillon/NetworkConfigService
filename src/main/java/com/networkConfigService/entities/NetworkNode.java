@@ -6,10 +6,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
 @SuppressWarnings("serial")
@@ -40,8 +37,9 @@ public class NetworkNode implements Serializable{
 			
 	}
 	
-	public NetworkNode(Integer nodeId, String location, Double latitude, Double longtitude){
+	public NetworkNode(Integer nodeId, String nodeName, String location, Double latitude, Double longtitude){
 		this.nodeId = nodeId;
+		this.name = nodeName;
 		this.location = location;
 		this.latitude = latitude;
 		this.longtitude = longtitude;
@@ -55,6 +53,14 @@ public class NetworkNode implements Serializable{
 
 	public void setNodeId(Integer nodeId) {
 		this.nodeId = nodeId;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getLocation() {

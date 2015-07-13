@@ -13,6 +13,6 @@ public interface NetworkNodeLocal {
 	public Collection<NetworkNode> getAllNetworkNodes();
 	public void deleteNetworkNode(Integer nodeId);
 	public void updateNetworkNode(Integer nodeId, String location, Double latitude, Double longtitude);
-	public void addNetworkNode(Integer nodeId, String location, Double latitude, Double longtitude);
+	public void addNetworkNode(Integer nodeId, String nodeName, String location, Double latitude, Double longtitude);
 
 }

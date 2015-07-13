@@ -49,9 +49,9 @@ public class NetworkNodeDAOImpl implements NetworkNodeDAO {
 	}
 
 	@Override
-	public void addNetworkNode(Integer nodeId, String location,
+	public void addNetworkNode(Integer nodeId, String nodeName, String location,
 			Double latitude, Double longtitude) {
-		NetworkNode newNode = new NetworkNode(nodeId, location, latitude, longtitude);
+		NetworkNode newNode = new NetworkNode(nodeId, nodeName, location, latitude, longtitude);
 		em.persist(newNode);
 		
 	}
