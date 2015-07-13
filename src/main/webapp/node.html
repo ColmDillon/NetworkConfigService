@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/node.js"></script>
+
+<title>Node</title>
+</head>
+
+<body>
+
+	<p>Create node 	</p>
+	<div id="NodeForm">
+	<form name='registration' onSubmit="create_node();">
+		<ul>
+			<li><label for="nodeId"> Node ID:</label></li>
+			<li><input id="nodeId" type="text" name="nodeId" size="17" /></li>
+
+			<li><label for="nodeName"> Node Name:</label></li>
+			<li><input id="nodeName" type="text" name="nodeName" size="17" /></li>
+			
+			<li><label for="nodeLocation"> Node Location:</label></li>
+			<li><input id="nodeLocation" type="text" name="nodeLocation"
+				size="17" /></li>
+				
+			<li><label for="latitude"> Latitude:</label></li>
+			<li><input id="latitude" type="text" name="latitude"
+				size="17" /></li>
+				
+			<li><label for="longtitude"> Longtitude:</label></li>
+			<li><input id="longtitude" type="text" name="longtitude"
+				size="17" /></li>
+		</ul>
+		<input type="submit"/>
+	</form>
+	</div>
+	<div id="submitForm"> 
+	 </div>
+				
+
+</body>
+</html>
+
+
+
