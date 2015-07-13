@@ -18,6 +18,9 @@ public class Cell implements Serializable {
 	@Column(name = "cell_range")
 	private Integer range; // in km
 
+	@Column(name = "network_node")
+	private NetworkNode node;
+
 	public Cell() {
 
 	}
